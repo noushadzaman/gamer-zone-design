@@ -217,10 +217,11 @@ nav>div>ul>li>div>span>img {
 }
 
 
-.content img{
+.content img {
     width: 50px;
 }
-.content{
+
+.content {
     width: 100%;
 }
 
@@ -632,15 +633,17 @@ footer {
     #features-section {
         flex-direction: column;
         gap: 100px;
-        margin-bottom: 186px;
+        margin-bottom: 150px;
     }
 
     .features-content-title-1 {
         text-align: center;
+        font-size: 43px;
     }
 
     .features-content-title-2 {
         text-align: center;
+        font-size: 43px;
     }
 
     .features-content-description {
@@ -667,7 +670,7 @@ footer {
     #features-section-2 {
         flex-direction: column;
         gap: 100px;
-        margin-bottom: 186px;
+        margin-bottom: 150px;
     }
 
     .feature-img3 {
@@ -683,10 +686,12 @@ footer {
 
     .features-content-title-3 {
         text-align: center;
+        font-size: 43px;
     }
 
     .features-content-title-4 {
         text-align: center;
+        font-size: 43px;
     }
 
     .features-content-description-2 {
@@ -694,6 +699,7 @@ footer {
         width: 90%;
         margin: 0 auto;
         margin-top: 30px;
+        font-size: 16px;
     }
 
     #careers-section-div {
@@ -723,7 +729,7 @@ footer {
         height: 60px;
     }
 
-    footer{
+    footer {
         text-align: center;
     }
 
@@ -936,7 +942,7 @@ footer {
         height: 60px;
     }
 
-    footer{
+    footer {
         text-align: center;
     }
 
