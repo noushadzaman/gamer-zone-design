@@ -5,6 +5,8 @@
     padding: 0px;
     font-family: 'Lato', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
 nav {
@@ -66,18 +68,18 @@ nav>div>ul>li>div>span>img {
 /* nav ends here */
 
 #banner {
-    background-image: url('./images/Group\ 18.png');
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    margin-right: 240px;
-}
-
-#banner-content {
     background-image: url('./images/Group\ 14.png');
     background-position: center;
     background-repeat: no-repeat;
     background-position: left;
-    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 240px;
+}
+
+#banner-content {
+
+    min-height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -215,6 +217,12 @@ nav>div>ul>li>div>span>img {
     height: 400px;
     flex-shrink: 0;
     margin-bottom: 24px;
+    /* display: block; */
+}
+
+.game {
+
+    position: relative;
 }
 
 #games-collection-container {
@@ -228,7 +236,7 @@ nav>div>ul>li>div>span>img {
 
 
 
-
+/* feature section starts */
 
 
 
@@ -282,7 +290,7 @@ nav>div>ul>li>div>span>img {
 
 
 
-
+/* feature section 2 starts */
 
 
 #features-section-2 {
@@ -325,7 +333,7 @@ nav>div>ul>li>div>span>img {
     text-align: left;
 }
 
-.features-content-description {
+.features-content-description-2 {
     color: #534C64;
     text-align: left;
     font-size: 18px;
@@ -334,13 +342,18 @@ nav>div>ul>li>div>span>img {
 }
 
 
+/* careers section start */
 
 
+
+#info>div>p {
+    margin-bottom: 10px;
+}
 
 
 
 #careers-section {
-    max-height: 821px;
+    min-height: 821px;
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
 }
 
@@ -373,7 +386,7 @@ nav>div>ul>li>div>span>img {
     justify-content: space-between;
     margin-bottom: 40px;
     color: #FFF;
-    font-size: 20px; 
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -448,88 +461,290 @@ footer {
     font-size: 45px;
     font-weight: 700;
     color: #FFF;
+    padding-bottom: 63px;
+}
+.footer-a {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-top: 63px;
+    padding-bottom: 56px;
 }
 
-footer>ul {
-    display: flex;
-    gap: 60px;
-    margin-top: 56px;
-    margin-bottom: 56px;
-    flex-wrap: wrap;
-    padding-left: 80px;
-    padding-right: 80px;
-    justify-content: center;
-}
-
-footer>ul>li>a {
-    text-decoration: none;
-    list-style: none;
+.footer-a>a {
     color: white;
     font-size: 18px;
     font-weight: 600;
+    padding-left: 15px;
 }
 
+
 #socials {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
     padding-left: 100px;
     padding-right: 100px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-bottom: 64px;
+}
+
+#socials img{
+    padding-left: 30px;
 }
 
 #privacy {
-    display: flex;
-    gap: 60px;
-    margin-bottom: 18px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .privacy-a {
     color: rgba(255, 255, 255, 0.60);
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 28px;
+    padding-top: 28px;
 }
+
+
+.content {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    transition: 0.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content:hover {
+    opacity: 1;
+
+}
+
+
 @media screen and (max-width: 576px) {
     nav {
         flex-direction: column;
         justify-content: center;
         margin-bottom: 78px;
     }
+
     #nav-logo-container {
         gap: 10px;
         padding-left: 0px;
         padding-bottom: 62px;
         padding-top: 102px;
     }
+
     nav>div>ul {
         flex-direction: column;
         gap: 36px;
         padding-right: 0px;
     }
+
+    #banner {
+        flex-direction: column-reverse;
+        margin-right: 0px;
+        background-position: bottom;
+        /* padding-left: 50px;
+        padding-right: 50px; */
+    }
+
+    #banner-content {
+        height: auto;
+        padding-left: 0px;
+        margin: 0 auto;
+    }
+
+    #banner-h3 {
+        color: #0B0223;
+        font-size: 48px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    #banner-h2 {
+        font-size: 95px;
+        font-weight: 800;
+        text-transform: uppercase;
+        background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 24px;
+    }
+
+    .banner-p {
+        color: #534C64;
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: lowercase;
+        margin-bottom: 17px;
+    }
+
+
+
     #community-section {
         padding-top: 36px;
         flex-direction: column;
     }
+
     #community-content {
         text-align: center;
         width: 80%;
     }
-    #community-section-img{
+
+    #community-section-img {
         width: 80%;
     }
+
+    #games-collection-description {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .game-description {
+        margin-bottom: 50px;
+    }
+
+    #games-collection-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 50px;
+    }
+
+
+
+
+
+
+    #features-section {
+        flex-direction: column;
+        gap: 100px;
+        margin-bottom: 186px;
+    }
+
+    .features-content-title-1 {
+        text-align: center;
+    }
+
+    .features-content-title-2 {
+        text-align: center;
+    }
+
+    .features-content-description {
+        text-align: center;
+    }
+
+    .feature-img1 {
+        width: 60%;
+    }
+
+    .feature-img2 {
+        width: 25%;
+        position: relative;
+        margin-top: -80px;
+        margin-left: 40px;
+    }
+
+    .feature-imgs {
+        text-align: center;
+        padding-left: 40px;
+    }
+
+
+    #features-section-2 {
+        flex-direction: column;
+        gap: 100px;
+        margin-bottom: 186px;
+    }
+
+    .feature-img3 {
+        width: 60%;
+    }
+
+    .feature-img4 {
+        width: 25%;
+        position: relative;
+        margin-top: -80px;
+        margin-left: 220px;
+    }
+
+    .features-content-title-3 {
+        text-align: center;
+    }
+
+    .features-content-title-4 {
+        text-align: center;
+    }
+
+    .features-content-description-2 {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    #careers-section-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #careers-section-content {
+        width: 80%;
+        padding-left: 0px;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+    #category-section {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .category {
+        gap: 5px;
+        padding: 5px;
+    }
+
+    #categories {
+        gap: 10px;
+    }
+
+    .footer-a {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-top: 63px;
+        padding-bottom: 56px;
+        grid-row-gap: 20px;
+    }
+    
+    #socials {
+        padding-left: 00px;
+        padding-right: 00px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 20px;
+    }
+    
+    #privacy {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
 }
+
 @media screen and (min-width: 577px) and (max-width: 1200px) {
     nav {
         flex-direction: column;
     }
+
     #nav-logo-container {
         padding: 0;
         padding-bottom: 40px;
     }
+
     nav>div>ul {
         text-align: center;
         padding: 0px;
     }
-    
+
 }
