@@ -139,7 +139,6 @@ nav>div>ul>li>div>span>img {
 
 #community-content {
     text-align: right;
-    /* margin-bottom: 120px; */
 }
 
 #community-section-heading {
@@ -490,4 +489,47 @@ footer>ul>li>a {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 28px;
+}
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 78px;
+    }
+    #nav-logo-container {
+        gap: 10px;
+        padding-left: 0px;
+        padding-bottom: 62px;
+        padding-top: 102px;
+    }
+    nav>div>ul {
+        flex-direction: column;
+        gap: 36px;
+        padding-right: 0px;
+    }
+    #community-section {
+        padding-top: 36px;
+        flex-direction: column;
+    }
+    #community-content {
+        text-align: center;
+        width: 80%;
+    }
+    #community-section-img{
+        width: 80%;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 1200px) {
+    nav {
+        flex-direction: column;
+    }
+    #nav-logo-container {
+        padding: 0;
+        padding-bottom: 40px;
+    }
+    nav>div>ul {
+        text-align: center;
+        padding: 0px;
+    }
+    
 }
