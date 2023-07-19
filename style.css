@@ -341,8 +341,12 @@ nav>div>ul>li>div>span>img {
 
 
 #careers-section {
-    height: 821px;
+    max-height: 821px;
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+
+#careers-section-div {
+    display: flex;
 }
 
 #careers-section-content {
@@ -362,15 +366,15 @@ nav>div>ul>li>div>span>img {
     color: #FFF;
     font-size: 18px;
     font-weight: 400;
+    margin-bottom: 32px;
 }
 
 #info {
     display: flex;
     justify-content: space-between;
-    margin-top: 32px;
     margin-bottom: 40px;
     color: #FFF;
-    font-size: 20px;
+    font-size: 20px; 
     font-weight: 600;
 }
 
@@ -394,15 +398,22 @@ nav>div>ul>li>div>span>img {
 }
 
 .category {
-
     display: flex;
     align-items: center;
     gap: 16px;
     border-radius: 50px;
     background-color: white;
     padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     padding-right: 20px;
 }
+
+.category:hover {
+    border: 2px solid #FF42A5;
+    color: #F948B2;
+}
+
 
 #categories {
     padding-top: 120px;
@@ -478,5 +489,5 @@ footer>ul>li>a {
     color: rgba(255, 255, 255, 0.60);
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 18px;
+    margin-bottom: 28px;
 }
