@@ -412,3 +412,71 @@ nav>div>ul>li>div>span>img {
     justify-content: center;
     gap: 27px;
 }
+
+
+
+
+footer {
+    min-height: 636px;
+    flex-shrink: 0;
+    background: #0B0223;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#g {
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#footer-title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+footer>ul {
+    display: flex;
+    gap: 60px;
+    margin-top: 56px;
+    margin-bottom: 56px;
+    flex-wrap: wrap;
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: center;
+}
+
+footer>ul>li>a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#socials {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: center;
+}
+
+#privacy {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 18px;
+}
+
+.privacy-a {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
